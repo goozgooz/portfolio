@@ -1,18 +1,18 @@
-#nav-name {
+.nav-name {
   float: left;
-  padding-left: 10%;
+  padding-left: 7%;
   padding-top: 2%;
 }
 
 .hamburger-menu {
   float: right;
-  padding: 2%;
+  padding: 1%;
+  padding-right: 7%;
 }
 
 .nav-bar ul {
   list-style: none;
   display: none;
-  padding-right: 7%;
 }
 
 .nav-bar:hover ul{
