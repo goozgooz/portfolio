@@ -15,7 +15,7 @@
   padding-right: 7%;
 }
 
-.nav-bar:hover ul{
+.nav-bar:hover ul {
   display: block;
 }
 
@@ -30,4 +30,22 @@
 
 .footer {
   text-align: center;
+}
+
+.logos img {
+  margin-top: 1%;
+  width: 15px;
+  height: auto;
+  opacity: .5;
+}
+
+@media (min-width:415px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .nav-bar ul {
+    display: block;
+  }
+
 }
