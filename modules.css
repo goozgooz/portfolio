@@ -1,0 +1,12 @@
+#nav-name{
+  display: inline;
+}
+
+.header ul{
+  list-style: none;
+}
+
+.header  li{
+  display: inline;
+  float: left;
+}
