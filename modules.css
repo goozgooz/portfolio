@@ -1,35 +1,5 @@
-.nav-name {
-  float: left;
-  padding-left: 10%;
-  padding-top: 2%;
-}
-
-.hamburger-menu {
-  float: right;
-  padding: 2%;
-}
-
-.nav-bar ul {
-  list-style: none;
-  display: none;
-  padding-right: 7%;
-}
-
 .nav-bar:hover ul {
   display: block;
-}
-
-.nav-bar  li {
-  float: right;
-  padding: 2%;
-}
-
-.header {
-  overflow: hidden;
-}
-
-.footer {
-  text-align: center;
 }
 
 .logos img {

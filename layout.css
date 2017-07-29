@@ -1,22 +1,22 @@
+.header {
+  overflow: hidden;
+}
+
 .nav-name {
   float: left;
-  padding-left: 7%;
+  padding-left: 10%;
   padding-top: 2%;
 }
 
 .hamburger-menu {
   float: right;
   padding: 2%;
-  padding-right: 7%;
 }
 
 .nav-bar ul {
   list-style: none;
   display: none;
-}
-
-.nav-bar:hover ul{
-  display: block;
+  padding-right: 7%;
 }
 
 .nav-bar  li {
@@ -26,4 +26,8 @@
 
 .header {
   overflow: hidden;
+}
+
+.footer {
+  text-align: center;
 }
