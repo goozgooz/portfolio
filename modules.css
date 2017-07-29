@@ -1,0 +1,32 @@
+.nav-bar:hover ul {
+  display: block;
+  text-align: center;
+  clear: both;
+}
+
+.logos img {
+  margin-top: .2em;
+  width: 15px;
+  height: auto;
+  opacity: .5;
+}
+
+img:hover{
+  opacity: 1;
+}
+
+@media (min-width:415px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .nav-bar ul {
+    display: block;
+    float: right;
+    padding-top: 2%;
+  }
+
+  .nav-bar li {
+    float: left;
+  }
+}
