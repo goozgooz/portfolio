@@ -4,11 +4,12 @@
 
 .nav-name {
   float: left;
-  padding-left: 10%;
-  padding-top: 2%;
+  margin-left: 7%;
+  margin-top: 2%;
 }
 
 .hamburger-menu {
+  display: inline-block;
   float: right;
   padding: 2%;
 }
@@ -20,8 +21,8 @@
 }
 
 .nav-bar  li {
-  float: right;
   padding: 2%;
+  style: block;
 }
 
 .header {

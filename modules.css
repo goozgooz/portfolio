@@ -1,5 +1,7 @@
 .nav-bar:hover ul {
   display: block;
+  text-align: center;
+  clear: both;
 }
 
 .logos img {
@@ -9,6 +11,10 @@
   opacity: .5;
 }
 
+img:hover{
+  opacity: 1;
+}
+
 @media (min-width:415px) {
   .hamburger-menu {
     display: none;
@@ -16,6 +22,11 @@
 
   .nav-bar ul {
     display: block;
+    float: right;
+    padding-top: 2%;
   }
 
+  .nav-bar li {
+    float: left;
+  }
 }
