@@ -30,3 +30,24 @@ img:hover{
     float: left;
   }
 }
+
+/*  Stuff For Projects   */
+.project {
+  text-align: center;
+}
+
+.project-img {
+  width: 320px;
+  height: auto;
+}
+
+@media (min-width: 700px) {
+  .project-holder {
+    text-align: center;
+  }
+  .project {
+    float: none;
+    display: inline-block;
+    padding: 2%;
+  }
+}

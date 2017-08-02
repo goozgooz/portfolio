@@ -1,3 +1,5 @@
+/*    Header     */
+
 .header {
   overflow: hidden;
 }
@@ -6,6 +8,11 @@
   float: left;
   margin-left: 7%;
   margin-top: 2%;
+}
+
+#hamburger {
+  height: 16px;
+  width: auto;
 }
 
 .hamburger-menu {
