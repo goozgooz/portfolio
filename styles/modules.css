@@ -1,10 +1,35 @@
-.nav-bar:hover ul {
+/*    Header     */
+
+#hamburger {
+  height: 16px;
+  width: auto;
+}
+
+.hamburger-menu {
+  display: inline-block;
+  float: right;
+  padding: 2%;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: none;
+  padding-right: 7%;
+}
+
+.nav-bar  li {
+  padding: 2%;
+  style: block;
+}
+
+.nav-bar:click ul {
   display: block;
   text-align: center;
   clear: both;
 }
 
 .logos img {
+  max-width: 100%;
   margin-top: .2em;
   width: 15px;
   height: auto;
@@ -15,39 +40,15 @@ img:hover{
   opacity: 1;
 }
 
-@media (min-width:415px) {
-  .hamburger-menu {
-    display: none;
-  }
-
-  .nav-bar ul {
-    display: block;
-    float: right;
-    padding-top: 2%;
-  }
-
-  .nav-bar li {
-    float: left;
-  }
+/*    About Me Stuff   */
+#about-pic{
+  max-width: 50%;
 }
 
-/*  Stuff For Projects   */
-.project {
-  text-align: center;
-}
+
+/*  Portfolio Stuff   */
 
 .project-img {
   width: 320px;
   height: auto;
-}
-
-@media (min-width: 700px) {
-  .project-holder {
-    text-align: center;
-  }
-  .project {
-    float: none;
-    display: inline-block;
-    padding: 2%;
-  }
 }

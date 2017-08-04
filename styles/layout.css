@@ -10,31 +10,45 @@
   margin-top: 2%;
 }
 
-#hamburger {
-  height: 16px;
-  width: auto;
+@media (min-width:415px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .nav-bar ul {
+    display: block;
+    float: right;
+    padding-top: 2%;
+  }
+
+  .nav-bar li {
+    float: left;
+  }
 }
 
-.hamburger-menu {
-  display: inline-block;
-  float: right;
-  padding: 2%;
+/*    About Me Stuff:   ;*/
+.about-me{
+  text-align: center;
 }
 
-.nav-bar ul {
-  list-style: none;
-  display: none;
-  padding-right: 7%;
+/*    Portfolio Stuff   ;*/
+
+.project {
+  text-align: center;
 }
 
-.nav-bar  li {
-  padding: 2%;
-  style: block;
+@media (min-width: 700px) {
+  .project-holder {
+    text-align: center;
+  }
+  .project {
+    float: none;
+    display: inline-block;
+    padding: 2%;
+  }
 }
 
-.header {
-  overflow: hidden;
-}
+/*    Footer:   ;*/
 
 .footer {
   text-align: center;
