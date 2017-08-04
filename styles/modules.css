@@ -41,14 +41,21 @@ img:hover{
 }
 
 /*    About Me Stuff   */
-#about-pic{
+#about-pic {
   max-width: 50%;
+}
+
+.about-me-titles {
+  margin-bottom: 1%;
 }
 
 
 /*  Portfolio Stuff   */
-
 .project-img {
   width: 320px;
   height: auto;
+}
+
+.project-titles {
+  margin-bottom: 1%;
 }
