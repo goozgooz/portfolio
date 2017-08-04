@@ -8,24 +8,29 @@
 .hamburger-menu {
   display: inline-block;
   float: right;
-  padding: 2%;
+  margin: 2%;
+  margin-right: 15%;
+}
+
+.nav-name {
+  float: left;
+  margin-left: 15%;
+  margin-top: 2%;
 }
 
 .nav-bar ul {
-  list-style: none;
   display: none;
-  padding-right: 7%;
 }
 
-.nav-bar  li {
-  padding: 2%;
-  style: block;
-}
-
-.nav-bar:click ul {
+.nav-bar:hover ul {
   display: block;
   text-align: center;
   clear: both;
+}
+
+.nav-bar  li {
+  margin: 3%;
+  style: block;
 }
 
 .logos img {
@@ -42,7 +47,7 @@ img:hover{
 
 /*    About Me Stuff   */
 #about-pic {
-  max-width: 50%;
+  max-width: 70%;
 }
 
 .about-me-titles {
@@ -58,4 +63,9 @@ img:hover{
 
 .project-titles {
   margin-bottom: 1%;
+}
+
+.project-des {
+  width: 300px;
+  height: auto;
 }
