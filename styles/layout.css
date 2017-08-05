@@ -27,11 +27,15 @@ header {
 .about-me {
   margin-top: 5%;
   text-align: center;
+  display: none;
 }
 
 /*    Portfolio Stuff   ;*/
+project.template {
+  display: none;
+}
 
-.project {
+.project-holder {
   text-align: center;
 }
 
@@ -39,7 +43,7 @@ header {
   .project-holder {
     text-align: center;
   }
-  .project {
+  project {
     display: inline-block;
     padding: 2%;
   }

@@ -57,7 +57,7 @@ img:hover{
 
 /*  Portfolio Stuff   */
 .project-img {
-  width: 320px;
+  max-width: 90%;
   height: auto;
 }
 

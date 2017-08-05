@@ -10,8 +10,8 @@ function Project(project){
 };
 
 Project.prototype.toHtml = function() {
-  var $newProject = $('.project').clone();
-  // $newProject.removeAttr('ID');
+  var $newProject = $('project').clone();
+  $newProject.removeClass();
 
   $newProject.find('.project-titles').html(this.projectName);
   $newProject.find('.project-des').html(this.description);
@@ -25,6 +25,5 @@ allProjects.forEach(function(projectData){
 });
 
 projects.forEach(function(project) {
-  console.log(projects);
   $('.project-holder').append(project.toHtml());
 });
