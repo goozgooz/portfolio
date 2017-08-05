@@ -20,11 +20,22 @@
 
 .nav-bar ul {
   display: none;
+  clear: both;
+  border: black 2px solid;
+  text-align: center;
 }
 
 .nav-bar  li {
   margin: 3%;
   style: block;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 .logos img {
@@ -62,4 +73,15 @@ img:hover{
   width: 300px;
   height: auto;
   margin: auto;
+}
+
+project {
+  max-width: 450px;
+  display: inline;
+  overflow: hidden;
+}
+
+.project-holder {
+  overflow: hidden;
+  text-align: center;
 }
