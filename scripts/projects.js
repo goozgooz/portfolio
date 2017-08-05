@@ -10,7 +10,7 @@ function Project(project){
 };
 
 Project.prototype.toHtml = function() {
-  var $newProject = $('project').clone();
+  var $newProject = $('.template').clone();
   $newProject.removeClass();
 
   $newProject.find('.project-titles').html(this.projectName);

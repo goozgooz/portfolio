@@ -22,12 +22,6 @@
   display: none;
 }
 
-.nav-bar:hover ul {
-  display: block;
-  text-align: center;
-  clear: both;
-}
-
 .nav-bar  li {
   margin: 3%;
   style: block;
@@ -47,7 +41,7 @@ img:hover{
 
 /*    About Me Stuff   */
 #about-pic {
-  max-width: 70%;
+  max-width: 80%;
 }
 
 .about-me-titles {
@@ -57,8 +51,7 @@ img:hover{
 
 /*  Portfolio Stuff   */
 .project-img {
-  max-width: 90%;
-  height: auto;
+  max-width: 80%;
 }
 
 .project-titles {
