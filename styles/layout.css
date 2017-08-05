@@ -31,6 +31,11 @@ header {
 }
 
 /*    Portfolio Stuff   ;*/
+project {
+  display: inline-block;
+  margin-top: 5%;
+}
+
 project.template {
   display: none;
 }
@@ -42,10 +47,6 @@ project.template {
 @media (min-width: 700px) {
   .project-holder {
     text-align: center;
-  }
-  project {
-    display: inline-block;
-    padding: 2%;
   }
 }
 
