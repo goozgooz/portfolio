@@ -8,8 +8,9 @@
 .hamburger-menu {
   display: inline-block;
   float: right;
-  margin: 2%;
   margin-right: 15%;
+  margin-top: .2em;
+  padding: .5em;
 }
 
 .nav-name {
@@ -20,10 +21,16 @@
 
 .nav-bar ul {
   display: none;
+  float: right;
+  overflow: hidden;
+  margin-right: 15%;
+  margin-top: 10%;
 }
 
 .nav-bar  li {
   margin: 3%;
+  padding: .2em;
+  text-align: center;
   style: block;
 }
 

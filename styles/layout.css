@@ -12,12 +12,11 @@ header {
 
    .nav-bar ul {
     display: block;
-    float: right;
     margin-top: 2%;
-    width: 20%;
   }
 
   .nav-bar li {
+    display: inline;
     float: left;
   }
 }
