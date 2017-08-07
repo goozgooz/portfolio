@@ -36,10 +36,6 @@ project {
   margin-top: 5%;
 }
 
-project.template {
-  display: none;
-}
-
 .project-holder {
   text-align: center;
 }

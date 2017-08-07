@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="styles/layout.css">
+
+    <script type="text/x-handlebars-template" id="project-template">
+      <project>
+        <h2 class="project-titles">{{projectName}}</h2>
+        <img src={{picture}} alt="" class="project-img">
+        <p class="project-des">{{description}}</p>
+      </project>
+    </script>
   </head>
 
   <body>
@@ -29,11 +37,6 @@
   </div>
 
   <div class="project-holder tab-content">
-    <project class="template">
-      <h2 class="project-titles">Portfolio 1</h2>
-      <img src="vendor/images/test.jpg" alt="" class="project-img">
-      <p class="project-des">This is the about me project blah blah blah</p>
-    </project>
   </div>
 
     <hr>
