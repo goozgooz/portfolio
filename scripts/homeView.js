@@ -8,7 +8,7 @@ homePage.load = function() {
 };
 
 homePage.navBar = function() {
-  $('.hamburger-menu').hover(
+  $('.hamburger-menu, li').hover(
     function(){
       $('.nav-bar ul').show();
     },

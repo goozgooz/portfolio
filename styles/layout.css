@@ -30,20 +30,9 @@ header {
 }
 
 /*    Portfolio Stuff   ;*/
-project {
-  display: inline-block;
-  float: left;
-  margin-top: 5%;
-}
-
 .project-holder {
   text-align: center;
-}
-
-@media (min-width: 700px) {
-  .project-holder {
-    text-align: center;
-  }
+  overflow: hidden;
 }
 
 /*    Footer:   ;*/
