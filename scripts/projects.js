@@ -10,14 +10,8 @@ function Project(project){
 };
 
 Project.prototype.toHtml = function() {
-  var $newProject = $('.project').clone();
-  // $newProject.removeAttr('ID');
-
-  $newProject.find('.project-titles').html(this.projectName);
-  $newProject.find('.project-des').html(this.description);
-  $newProject.find('.project-img').html(this.picture);
-  $newProject.find('.time').html('about ' + parseInt((new Date() - new Date(this.date)) / 60 / 60 / 24 / 1000) + ' days ago');
-  return $newProject;
+  var template = Handlebars.compile($('#project-template').html());
+  return template(this);
 };
 
 allProjects.forEach(function(projectData){
@@ -25,6 +19,5 @@ allProjects.forEach(function(projectData){
 });
 
 projects.forEach(function(project) {
-  console.log(projects);
   $('.project-holder').append(project.toHtml());
 });

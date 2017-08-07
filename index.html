@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="styles/layout.css">
+
+    <script type="text/x-handlebars-template" id="project-template">
+      <project>
+        <h2 class="project-titles">{{projectName}}</h2>
+        <img src={{picture}} alt="" class="project-img">
+        <p class="project-des">{{description}}</p>
+      </project>
+    </script>
   </head>
 
   <body>
@@ -15,26 +23,20 @@
       <h1 class="nav-name">ashkaan</h1>
       <nav class="nav-bar">
         <span class="hamburger-menu"><img src="vendor/images/hamburger.png" id="hamburger"></img></span>
-        <ul>
-          <li>home</li>
-          <li>projects</li>
+        <ul class="hide">
+          <li data-attribute="about-me">home</li>
+          <li data-attribute="project-holder">projects</li>
           <li>contact</li>
         </ul>
       </nav>
     </header>
 
-  <div class="about-me about-tab">
+  <div class="about-me tab-content">
     <h1 class="about-me-titles">About Me</h1>
-    <img src="vendor/images/golf.jpg" alt="Ashkaan Golfing" id="about-pic">
+    <img src="vendor/images/craterLake.jpg" alt="Ashkaan at Crater Lake" id="about-pic">
   </div>
 
-  <div class="project-holder project-tab">
-    <div class="project">
-      <h2 class="project-titles">Portfolio 1</h2>
-      <img src="vendor/images/test.jpg" alt="" class="project-img">
-      <p> <time class="time" pubdate datetime="2000-01-01">Publish Time</time></p>
-      <p class="project-des">This is the about me project blah blah blah</p>
-    </div>
+  <div class="project-holder tab-content">
   </div>
 
     <hr>
@@ -49,6 +51,8 @@
     </div>
 
     <script src="scripts/jquery-3.2.1.js"></script>
+    <script src="scripts/handlebars-v4.0.10.js"></script>
+    <script src="scripts/homeView.js"></script>
     <script src="scripts/projectData.js"></script>
     <script src="scripts/projects.js"></script>
 

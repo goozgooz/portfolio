@@ -1,23 +1,15 @@
-/*    Header     */
-
-header {
-  overflow: hidden;
-}
-
-
 @media (min-width: 415px) {
-  .hamburger-menu {
+  .hamburger-menu, #hamburger {
     display: none;
   }
 
    .nav-bar ul {
     display: block;
-    float: right;
     margin-top: 2%;
-    width: 20%;
   }
 
   .nav-bar li {
+    display: inline;
     float: left;
   }
 }
@@ -27,22 +19,13 @@ header {
 .about-me {
   margin-top: 5%;
   text-align: center;
+  display: none;
 }
 
 /*    Portfolio Stuff   ;*/
-
-.project {
+.project-holder {
   text-align: center;
-}
-
-@media (min-width: 700px) {
-  .project-holder {
-    text-align: center;
-  }
-  .project {
-    display: inline-block;
-    padding: 2%;
-  }
+  overflow: hidden;
 }
 
 /*    Footer:   ;*/
