@@ -8,33 +8,27 @@
 .hamburger-menu {
   display: inline-block;
   float: right;
-  margin-right: 15%;
   margin-top: .2em;
   padding: .5em;
 }
 
 .nav-name {
   float: left;
-  margin-left: 15%;
   margin-top: 2%;
 }
 
 .nav-bar ul {
   float: right;
   overflow: hidden;
-  margin-right: 15%;
   margin-top: 10%;
+} 
+
+.nav-bar  li {
+  padding: .2em;
 }
 
 .hide {
   display: none;
-}
-
-.nav-bar  li {
-  margin: 3%;
-  padding: .2em;
-  text-align: center;
-  style: block;
 }
 
 .logos img {
