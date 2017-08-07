@@ -10,10 +10,11 @@ homePage.load = function() {
 homePage.navBar = function() {
   $('.hamburger-menu, li').hover(
     function(){
-      $('.nav-bar ul').addClass('show');
+      $('.nav-bar ul').removeClass('hide');
+      console.log($('nav-bar ul'));
     },
     function(){
-      $('.nav-bar ul').hide('hide');
+      $('.nav-bar ul').addClass('hide');
     });
 };
 

@@ -20,11 +20,14 @@
 }
 
 .nav-bar ul {
-  display: none;
   float: right;
   overflow: hidden;
   margin-right: 15%;
   margin-top: 10%;
+}
+
+.hide {
+  display: none;
 }
 
 .nav-bar  li {
