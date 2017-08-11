@@ -10,17 +10,32 @@
 
   .nav-bar li {
     display: inline;
+    padding: 0 1em;
     float: left;
+  }
+
+  #about-pic {
+    max-width: 45%;
+    float: left;
+  }
+
+  #about-text {
+    max-width: 45%;
+    float: right;
   }
 }
 
 /*    About Me Stuff:   ;*/
 
 .about-me {
-  margin-top: 5%;
-  text-align: center;
+  margin: 5% auto;
+  width: 80%;
   display: none;
+  overflow: hidden;
 }
+
+
+
 
 /*    Portfolio Stuff   ;*/
 .project-holder {
