@@ -1,3 +1,9 @@
+body {
+  background-color: #353535;
+  color: #F0EFF4;
+  font-family: 'Lusitana', serif;
+}
+
 header {
   width: 80%;
   margin: auto;
@@ -5,5 +11,24 @@ header {
 }
 
 hr {
+  margin-top: 5%;
   width: 69%;
 }
+
+header li:hover {
+  color: #0E79B2;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+
+
+/*
+gray: #353535
+white: #F0EFF4
+blue: #0E79B2
+*/

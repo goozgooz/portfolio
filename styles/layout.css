@@ -1,35 +1,74 @@
+/*    About Me Stuff:   ;*/
+
+.about-me {
+  margin: 5% auto;
+  width: 80%;
+  display: none;
+  overflow: hidden;
+}
+
+
+/*    Portfolio Stuff   ;*/
+.project-holder {
+  width: 80%;
+  margin: 2% auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+project {
+  display: inline-block;
+  margin: 5% auto;
+  max-width: 360px;
+}
+
+/*    Footer:   ;*/
+
+footer {
+  margin-top: 1%;
+  text-align: center;
+}
+
+/*    Media Queries   */
+
 @media (min-width: 415px) {
   .hamburger-menu, #hamburger {
     display: none;
   }
 
    .nav-bar ul {
-    display: block;
+    width: auto;
+    float: right;
+    display: inline-block;
     margin-top: 2%;
   }
 
   .nav-bar li {
     display: inline;
+    padding: 0 1em;
     float: left;
+  }
+
+  project {
+    border: 1px solid white;
+    max-width: 550px;
+    max-height: 450px;
+    margin: 2% 0;
   }
 }
 
-/*    About Me Stuff:   ;*/
+@media (min-width: 1100px) {
+  #about-pic {
+    max-width: 45%;
+    float: left;
+  }
 
-.about-me {
-  margin-top: 5%;
-  text-align: center;
-  display: none;
-}
-
-/*    Portfolio Stuff   ;*/
-.project-holder {
-  text-align: center;
-  overflow: hidden;
-}
-
-/*    Footer:   ;*/
-
-.footer {
-  text-align: center;
+  #about-text {
+    margin-top: 0;
+    font-size: 1.2em;
+    letter-spacing: .05em;
+    line-height: 2em;
+    max-width: 45%;
+    float: right;
+  }
 }

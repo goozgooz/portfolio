@@ -21,6 +21,8 @@ homePage.tabs = function() {
   $('.nav-bar').on('click', 'li', function(e) {
     e.preventDefault();
     $('.tab-content').hide();
+    $('header li').removeClass();
+    $(this).addClass('active-link');
     $('.' + $(this).data('attribute')).fadeIn();
   });
 };
