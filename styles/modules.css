@@ -60,21 +60,20 @@
 
 .project-des {
   width: 300px;
-  height: auto;
+  height: 300px;
   margin: auto;
   font-size: .9em;
   line-height: 1.5em;
 }
 
 /*    Footer:   */
-footer {
-  letter-spacing: .05em;
-  line-height: 1em;
+footer  h4{
+  letter-spacing: .08em;
+  margin: .3em;
 }
 
 .logos img {
   max-width: 100%;
-  margin-top: .2em;
   width: 15px;
   height: auto;
   opacity: .5;

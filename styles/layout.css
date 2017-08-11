@@ -10,24 +10,22 @@
 
 /*    Portfolio Stuff   ;*/
 .project-holder {
+  width: 80%;
+  margin: 2% auto;
   text-align: center;
   overflow: hidden;
 }
 
 project {
   display: inline-block;
-  float: left;
   margin: 5% auto;
   max-width: 360px;
-}
-
-.project-img {
-  max-width: 80%;
 }
 
 /*    Footer:   ;*/
 
 footer {
+  margin-top: 1%;
   text-align: center;
 }
 
@@ -52,7 +50,9 @@ footer {
   }
 
   project {
+    border: 1px solid white;
     max-width: 550px;
+    max-height: 450px;
     margin: 2% 0;
   }
 }
@@ -64,6 +64,7 @@ footer {
   }
 
   #about-text {
+    margin-top: 0;
     font-size: 1.2em;
     letter-spacing: .05em;
     line-height: 2em;
