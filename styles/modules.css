@@ -19,17 +19,20 @@
   color: #0E79B2;
   font-size: 2em;
   letter-spacing: .1em;
+  overflow: hidden;
 }
 
 .nav-bar ul {
   float: right;
   overflow: hidden;
-  margin-top: 10%;
+  margin-top: .5em;
+  width: 100%;
 }
 
 .nav-bar  li {
+  text-align: center;
   font-family: 'Raleway', sans-serif;
-  padding: .2em;
+  padding: .3em;
 }
 
 .hide {
@@ -50,17 +53,6 @@
 
 
 /*  Portfolio Stuff   */
-project {
-  display: inline-block;
-  float: left;
-  margin: 5% auto;
-  max-width: 360px;
-}
-
-.project-img {
-  max-width: 80%;
-}
-
 .project-titles {
   font-family: 'Raleway', sans-serif;
   margin-bottom: 1%;

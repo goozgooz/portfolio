@@ -1,10 +1,47 @@
+/*    About Me Stuff:   ;*/
+
+.about-me {
+  margin: 5% auto;
+  width: 80%;
+  display: none;
+  overflow: hidden;
+}
+
+
+/*    Portfolio Stuff   ;*/
+.project-holder {
+  text-align: center;
+  overflow: hidden;
+}
+
+project {
+  display: inline-block;
+  float: left;
+  margin: 5% auto;
+  max-width: 360px;
+}
+
+.project-img {
+  max-width: 80%;
+}
+
+/*    Footer:   ;*/
+
+footer {
+  text-align: center;
+}
+
+/*    Media Queries   */
+
 @media (min-width: 415px) {
   .hamburger-menu, #hamburger {
     display: none;
   }
 
    .nav-bar ul {
-    display: block;
+    width: auto;
+    float: right;
+    display: inline-block;
     margin-top: 2%;
   }
 
@@ -33,28 +70,4 @@
     max-width: 45%;
     float: right;
   }
-}
-
-/*    About Me Stuff:   ;*/
-
-.about-me {
-  margin: 5% auto;
-  width: 80%;
-  display: none;
-  overflow: hidden;
-}
-
-
-
-
-/*    Portfolio Stuff   ;*/
-.project-holder {
-  text-align: center;
-  overflow: hidden;
-}
-
-/*    Footer:   ;*/
-
-footer {
-  text-align: center;
 }
