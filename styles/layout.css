@@ -14,12 +14,22 @@
     float: left;
   }
 
+  project {
+    max-width: 550px;
+    margin: 2% 0;
+  }
+}
+
+@media (min-width: 1100px) {
   #about-pic {
     max-width: 45%;
     float: left;
   }
 
   #about-text {
+    font-size: 1.2em;
+    letter-spacing: .05em;
+    line-height: 2em;
     max-width: 45%;
     float: right;
   }
@@ -45,6 +55,6 @@
 
 /*    Footer:   ;*/
 
-.footer {
+footer {
   text-align: center;
 }

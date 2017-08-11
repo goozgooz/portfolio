@@ -13,6 +13,7 @@
 }
 
 .nav-name {
+  font-family: 'Raleway', sans-serif;
   float: left;
   margin-top: 2%;
   color: #0E79B2;
@@ -27,6 +28,7 @@
 }
 
 .nav-bar  li {
+  font-family: 'Raleway', sans-serif;
   padding: .2em;
 }
 
@@ -40,12 +42,18 @@
 
 /*    About Me Stuff   */
 
+#about-text {
+  margin-top: 2%;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
 
 /*  Portfolio Stuff   */
 project {
   display: inline-block;
   float: left;
-  margin-top: 5%;
+  margin: 5% auto;
   max-width: 360px;
 }
 
@@ -54,6 +62,7 @@ project {
 }
 
 .project-titles {
+  font-family: 'Raleway', sans-serif;
   margin-bottom: 1%;
 }
 
@@ -61,10 +70,15 @@ project {
   width: 300px;
   height: auto;
   margin: auto;
+  font-size: .9em;
+  line-height: 1.5em;
 }
 
 /*    Footer:   */
-
+footer {
+  letter-spacing: .05em;
+  line-height: 1em;
+}
 
 .logos img {
   max-width: 100%;
