@@ -11,15 +11,16 @@
 /*    Portfolio Stuff   ;*/
 .project-holder {
   width: 80%;
-  margin: 2% auto;
+  margin: 3% auto;
   text-align: center;
   overflow: hidden;
 }
 
 project {
   display: inline-block;
-  margin: 5% auto;
   max-width: 360px;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 /*    Footer:   ;*/
@@ -50,10 +51,10 @@ footer {
   }
 
   project {
-    border: 1px solid white;
     max-width: 550px;
     max-height: 450px;
-    margin: 2% 0;
+    margin: 1% 2%;
+    vertical-align: top;
   }
 }
 

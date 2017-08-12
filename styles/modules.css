@@ -55,19 +55,20 @@
 /*  Portfolio Stuff   */
 .project-titles {
   font-family: 'Raleway', sans-serif;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
+  font-size: 1.2em;
 }
 
 .project-des {
   width: 300px;
-  height: 300px;
+  height: auto;
   margin: auto;
   font-size: .9em;
   line-height: 1.5em;
 }
 
 /*    Footer:   */
-footer  h4{
+footer  h4 {
   letter-spacing: .08em;
   margin: .3em;
 }
