@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
     <script type="text/x-handlebars-template" id="project-template">
       <project>
@@ -33,7 +35,13 @@
     </header>
 
   <div class="about-me tab-content">
-    <img src="vendor/images/craterLake.jpg" alt="Ashkaan at Crater Lake" id="about-pic">
+    <div class="slideshow">
+      <div><img src="vendor/images/slideshow/craterLake.JPG" alt=""></div>
+      <div><img src="vendor/images/slideshow/bixby.jpg" alt=""></div>
+      <div><img src="vendor/images/slideshow/mcway.JPG" alt=""></div>
+      <div><img src="vendor/images/slideshow/wachlella.jpg" alt=""></div>
+
+    </div>
     <p id="about-text">Cat ipsum dolor sit amet, hunt anything that moves or hopped up on goofballs hide when guests come over. Hide when guests come over intrigued by the shower, or stare at ceiling climb leg for stretch and use lap as chair. Hunt anything that moves flop over, leave dead animals as gifts for chase imaginary bugs, chase mice for stare at ceiling yet hopped up on goofballs.</p>
   </div>
 
@@ -52,10 +60,12 @@
     </footer>
 
     <script src="scripts/jquery-3.2.1.js"></script>
+    <script src="slick/slick.min.js"></script>
     <script src="scripts/handlebars-v4.0.10.js"></script>
     <script src="scripts/homeView.js"></script>
     <script src="scripts/projectData.js"></script>
     <script src="scripts/projects.js"></script>
+    <script src="scripts/slideShow.js"></script>
 
   </body>
 </html>
