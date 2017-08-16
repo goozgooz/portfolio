@@ -1,6 +1,6 @@
 'use strict';
 
-var projects = [];
+Project.all = [];
 
 function Project(project){
   this.projectName = project.projectName;
@@ -14,10 +14,29 @@ Project.prototype.toHtml = function() {
   return template(this);
 };
 
-allProjects.forEach(function(projectData){
-  projects.push(new Project(projectData));
-});
+Project.load = function (projectData){
+  projectData.forEach(function(project){
+    Project.all.push(new Project(project));
+  });
 
-projects.forEach(function(project) {
-  $('.project-holder').append(project.toHtml());
-});
+  Project.all.forEach(function(project) {
+    $('.project-holder').append(project.toHtml());
+  });
+};
+
+Project.fetchAll = function() {
+  if (!localStorage.projectData) {
+    console.log('no local storage');  //testing to see if functionality works
+    $.getJSON('scripts/projectData.json', function(){
+    }) .then (function(data){
+      console.log('json retrieval succesful');
+      Project.load(data);
+      localStorage.setItem('projectData', JSON.stringify(data));
+    }) .fail (function(err){
+      console.log(err);
+    });
+  } else {
+    console.log('localStorage exists');
+    Project.load(JSON.parse(localStorage.projectData));
+  }
+};
