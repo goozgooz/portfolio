@@ -27,7 +27,7 @@ Project.load = function (projectData){
 Project.fetchAll = function() {
   if (!localStorage.projectData) {
     console.log('no local storage');  //testing to see if functionality works
-    $.getJSON('scripts/projectData.json', function(){
+    $.getJSON('data/projectData.json', function(){
     }) .then (function(data){
       console.log('json retrieval succesful');
       Project.load(data);
