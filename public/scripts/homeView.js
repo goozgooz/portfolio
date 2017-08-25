@@ -17,15 +17,29 @@ homePage.navBar = function() {
     });
 };
 
-homePage.tabs = function() {
-  $('.nav-bar').on('click', 'li', function(e) {
-    e.preventDefault();
-    $('.tab-content').hide();
-    $('header li').removeClass();
-    $(this).addClass('active-link');
-    $('.' + $(this).data('attribute')).fadeIn();
-  });
-};
+page('/home', home);
+page('/projects', home);
+page('/contact', contact);
+page('/*', notFound);
+page();
+
+function home() {
+  console.log('hi');
+  $('.tab-content').hide();
+  // $('header li').removeClass();
+  // $('#home').addClass('active-link');
+  $('.about-me').fadeIn();
+}
+
+// homePage.tabs = function() {
+//   $('.nav-bar').on('click', 'li', function(e) {
+//     e.preventDefault();
+//     $('.tab-content').hide();
+//     $('header li').removeClass();
+//     $(this).addClass('active-link');
+//     $('.' + $(this).data('attribute')).fadeIn();
+//   });
+// };
 
 homePage.load();
 homePage.navBar();

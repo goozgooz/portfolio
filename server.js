@@ -15,3 +15,7 @@ app.post('/articles', bodyParser, function(request, response) {
 app.listen(PORT, function() {
   console.log(`server up on Port:${PORT}`);
 });
+
+app.get('/*', function(req, res) {
+  res.sendFile('index.html', {root: './public'})
+});
