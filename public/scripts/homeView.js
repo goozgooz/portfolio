@@ -1,32 +1,40 @@
 'use strict';
 
-var homePage = {};
+var app = app || {};
 
-homePage.load = function() {
-  $('.tab-content').hide();
-  $('.about-me').show();
-};
+(function(module){
 
-homePage.navBar = function() {
-  $('.hamburger-menu, li').hover(
-    function(){
-      $('.nav-bar ul').removeClass('hide');
-    },
-    function(){
-      $('.nav-bar ul').addClass('hide');
-    });
-};
+  var homePage = {};
 
-homePage.tabs = function() {
-  $('.nav-bar').on('click', 'li', function(e) {
-    e.preventDefault();
+  homePage.load = () => {
     $('.tab-content').hide();
-    $('header li').removeClass();
-    $(this).addClass('active-link');
-    $('.' + $(this).data('attribute')).fadeIn();
-  });
-};
+    $('.about-me').show();
+  };
 
-homePage.load();
-homePage.navBar();
-homePage.tabs();
+  homePage.navBar = () => {
+    $('.hamburger-menu, li').hover(
+      function(){
+        $('.nav-bar ul').removeClass('hide');
+      },
+      function(){
+        $('.nav-bar ul').addClass('hide');
+      });
+  };
+
+  homePage.tabs = () => {
+    $('.nav-bar').on('click', 'li', function(e) {
+      e.preventDefault();
+      $('.tab-content').hide();
+      $('header li').removeClass();
+      $(this).addClass('active-link');
+      $('.' + $(this).data('attribute')).fadeIn();
+    });
+  };
+
+  homePage.load();
+  homePage.navBar();
+  homePage.tabs();
+
+  module.homePage = homePage;
+
+})(app);
