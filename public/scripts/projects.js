@@ -45,6 +45,15 @@ var app = app || {};
     }
   };
 
+  //Requirements for Portfolio Lab #10
+  Project.randomCode = () => {
+    var projects = JSON.parse(localStorage.projectData);
+    var projectTitles = projects.map(projects => projects.projectName)
+                                .reduce((string, titles) => {
+                                  return string + titles + ', '}, '');
+    console.log(`The following projects are displayed on my portfolio page: ${projectTitles}`);
+  }
+
   module.Project = Project;
 
 })(app);
