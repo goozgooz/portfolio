@@ -33,14 +33,12 @@ var app = app || {};
       console.log('no local storage');  //testing to see if functionality works
       $.getJSON('data/projectData.json', function(){
       }) .then (function(data){
-        console.log('json retrieval succesful');
         Project.load(data);
         localStorage.setItem('projectData', JSON.stringify(data));
       }) .fail (function(err){
         console.log(err);
       });
     } else {
-      console.log('localStorage exists');
       Project.load(JSON.parse(localStorage.projectData));
     }
   };
