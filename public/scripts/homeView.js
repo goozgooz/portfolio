@@ -33,14 +33,14 @@ var app = app || {};
 
   homePage.index = () => {
     $('.tab-content').hide();
-    $('.header li').removeClass();
+    $('header a').removeClass('active-link');
     $('.home-link').addClass('active-link');
     $('.about-me').fadeIn();
   };
 
   homePage.project = () => {
     $('.tab-content').hide();
-    $('.header li').removeClass();
+    $('header a').removeClass('active-link');
     $('.project-link').addClass('active-link');
     $('.project-holder').fadeIn();
   };
