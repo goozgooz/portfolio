@@ -39,6 +39,11 @@
   display: none;
 }
 
+a {
+  color: #F0EFF4;
+  text-decoration: none;
+}
+
 .active-link {
   color: #0E79B2;
 }

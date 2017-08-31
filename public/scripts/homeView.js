@@ -21,19 +21,33 @@ var app = app || {};
       });
   };
 
-  homePage.tabs = () => {
-    $('.nav-bar').on('click', 'li', function(e) {
-      e.preventDefault();
-      $('.tab-content').hide();
-      $('header li').removeClass();
-      $(this).addClass('active-link');
-      $('.' + $(this).data('attribute')).fadeIn();
-    });
+  // homePage.tabs = () => {
+  //   $('.nav-bar').on('click', 'li', function(e) {
+  //     e.preventDefault();
+  //     $('.tab-content').hide();
+  //     $('header li').removeClass();
+  //     $(this).addClass('active-link');
+  //     $('.' + $(this).data('attribute')).fadeIn();
+  //   });
+  // };
+
+  homePage.index = () => {
+    $('.tab-content').hide();
+    $('header a').removeClass('active-link');
+    $('.home-link').addClass('active-link');
+    $('.about-me').fadeIn();
+  };
+
+  homePage.project = () => {
+    $('.tab-content').hide();
+    $('header a').removeClass('active-link');
+    $('.project-link').addClass('active-link');
+    $('.project-holder').fadeIn();
   };
 
   homePage.load();
   homePage.navBar();
-  homePage.tabs();
+  // homePage.tabs();
 
   module.homePage = homePage;
 
