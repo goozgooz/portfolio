@@ -16,6 +16,8 @@ var app = app || {};
       }
     })
     .then(results => {
+      console.log(results);
+      debugger;
       repos.all = results;
       callback();
     }), error => {
@@ -24,4 +26,4 @@ var app = app || {};
   }
 
   module.repos = repos;
-});
+})(app);
