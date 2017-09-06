@@ -29,19 +29,20 @@ var app = app || {};
   };
 
   Project.fetchAll = function() {
-    app.repos.requestRepos(app.Project.load(app.repos.all))
-    // if (!localStorage.projectData) {
-    //   console.log('no local storage');  //testing to see if functionality works
-    //   $.getJSON('data/projectData.json', function(){
-    //   }) .then (function(data){
-    //     Project.load(data);
-    //     localStorage.setItem('projectData', JSON.stringify(data));
-    //   }) .fail (function(err){
-    //     console.log(err);
-    //   });
-    // } else {
-    //   Project.load(JSON.parse(localStorage.projectData));
-    // }
+    app.repos.requestRepos(app.Project.load(app.repos.all));
+
+    if (!localStorage.projectData) {
+      console.log('no local storage');  //testing to see if functionality works
+      $.getJSON('data/projectData.json', function(){
+      }) .then (function(data){
+        Project.load(data);
+        localStorage.setItem('projectData', JSON.stringify(data));
+      }) .fail (function(err){
+        console.log(err);
+      });
+    } else {
+      Project.load(JSON.parse(localStorage.projectData));
+    }
   };
 
   //Requirements for Portfolio Lab #10

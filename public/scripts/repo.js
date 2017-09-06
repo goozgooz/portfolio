@@ -16,9 +16,14 @@ var app = app || {};
       }
     })
     .then(results => {
-      console.log(results);
-      debugger;
-      repos.all = results;
+      // console.log(results);
+      module.repos.all = results.map(repo => {
+        if(repo.full_name = "goozgooz/cookie_stand"){
+        console.log(repo);
+        return repo;
+      }
+      })
+      console.log(module.repos.all);
       callback();
     }), error => {
       console.log(error);
