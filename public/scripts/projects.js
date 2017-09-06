@@ -28,7 +28,9 @@ var app = app || {};
     });
   };
 
-  Project.fetchAll = () => {
+  Project.fetchAll = function() {
+    app.repos.requestRepos(app.Project.load(app.repos.all));
+
     if (!localStorage.projectData) {
       console.log('no local storage');  //testing to see if functionality works
       $.getJSON('data/projectData.json', function(){
