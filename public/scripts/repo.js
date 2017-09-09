@@ -8,24 +8,11 @@ var app = app || {};
   repos.all = [];
 
   repos.requestRepos = function(callback){
-    $.ajax({
-      url: 'https://api.github.com/user/repos',
-      method: 'GET',
-      headers: {
-        'Authorization': `token ${githubToken}`
-      }
+    $.get('/repos' {
+      .then(data => repos.all = data)
+      console.log(repos.all);
+      .then(callback)
     })
-    .then(results => {
-      // console.log(results);
-      module.repos.all = results.map(repo => {
-        if(repo.full_name = "goozgooz/cookie_stand"){
-        console.log(repo);
-        return repo;
-      }
-    })
-    }), error => {
-      console.log(error);
-    }
   }
 
   module.repos = repos;
