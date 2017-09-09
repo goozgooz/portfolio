@@ -22,9 +22,7 @@ var app = app || {};
         console.log(repo);
         return repo;
       }
-      })
-      console.log(module.repos.all);
-      callback();
+    })
     }), error => {
       console.log(error);
     }
