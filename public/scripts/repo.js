@@ -8,11 +8,11 @@ var app = app || {};
   repos.all = [];
 
   repos.requestRepos = function(callback){
-    $.get('/repos' {
+    $.get('/repos') {
       .then(data => repos.all = data)
       console.log(repos.all);
       .then(callback)
-    })
+    }
   }
 
   module.repos = repos;
